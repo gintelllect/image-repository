@@ -1,16 +1,16 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-	connect: {
-		server: {
-		  options: {
-			port: 8000,
-			base: 'img',
-			open: true,
-			keepalive: true
-		  }
-		}
-	}
+    connect: {
+        server: {
+          options: {
+            port: 8000,
+            base: 'img',
+            open: true,
+            keepalive: true
+          }
+        }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
